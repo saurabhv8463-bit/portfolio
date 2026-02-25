@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Saurabh Vishwakarma | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1 class="fade-in">Saurabh Vishwakarma</h1>
+        <p class="fade-in">MCA Student | Web Developer</p>
+    </header>
+
+    <!-- Image-style Navbar -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <!-- Dark Mode Button -->
+        <button id="darkModeBtn" class="dark-btn">🌙 Dark Mode</button>
+    </nav>
+
+    <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>
+            My name is <strong>Saurabh Vishwakarma</strong>. I am an MCA student with a
+            keen interest in Web Development and programming.
+            I am learning HTML, CSS, JavaScript, C, Java, and DSA, and I enjoy building
+            simple, user-friendly web projects.
+            My goal is to start my career as a software developer and continuously
+            improve my technical skills.
+        </p>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <span>🌐</span>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-box">
+                <span>🎨</span>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-box">
+                <span>⚡</span>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-box">
+                <span>💻</span>
+                <h3>C Programming</h3>
+            </div>
+
+            <div class="skill-box">
+                <span>☕</span>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-box">
+                <span>📊</span>
+                <h3>DSA (Beginner)</h3>
+            </div>
+
+    </section>
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-box">
+                <h3>Student Management System</h3>
+                <p class="tech">Tech Used: HTML, CSS</p>
+
+                <p class="proj-desc">
+                    A basic web-based system designed to manage student information
+                    such as name, roll number, class, and contact details. This project
+                    helped me understand form handling, page structuring, and clean UI design.
+                </p>
+
+                <div class="proj-actions">
+                    <button class="btn view-btn" onclick="toggleProject('p1')">
+                        View Details
+                    </button>
+                </div>
+
+                <div id="p1" class="proj-view">
+                    <ul>
+                        <li>Structured student data using HTML forms</li>
+                        <li>Designed clean and readable UI using CSS</li>
+                        <li>Improved understanding of layouts and inputs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-box">
+                <h3>Personal Portfolio Website</h3>
+                <p class="tech">Tech Used: HTML, CSS, JavaScript</p>
+
+                <p class="proj-desc">
+                    A responsive personal portfolio website to showcase my skills,
+                    projects, certificates, and contact information in a professional way.
+                </p>
+
+                <div class="proj-actions">
+                    <button class="btn view-btn" onclick="toggleProject('p2')">
+                        View Details
+                    </button>
+                </div>
+
+                <div id="p2" class="proj-view">
+                    <ul>
+                        <li>Modern UI with card-based layout</li>
+                        <li>Dark mode toggle using JavaScript</li>
+                        <li>Smooth animations and section reveals</li>
+                        <li>Certificates with View & Download feature</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-box">
+                <h3>Basic JavaScript Mini Projects</h3>
+                <p class="tech">Tech Used: JavaScript, HTML, CSS</p>
+
+                <p class="proj-desc">
+                    Developed small JavaScript-based projects to understand core
+                    programming concepts like conditions, events, and DOM manipulation.
+                </p>
+
+                <div class="proj-actions">
+                    <button class="btn view-btn" onclick="toggleProject('p3')">
+                        View Details
+                    </button>
+                </div>
+
+                <div id="p3" class="proj-view">
+                    <ul>
+                        <li>Alert & form validation examples</li>
+                        <li>Button click and toggle logic</li>
+                        <li>Basic DOM manipulation practice</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="certificates" class="section reveal">
+        <h2>Certificates</h2>
+
+        <div class="certificates-container">
+
+            <!-- 1 -->
+            <div class="certificate-box">
+                <h3>AI for Entrepreneurship</h3>
+                <p class="issuer">Intel | Skill India</p>
+                <p class="cert-desc">
+                    Learned fundamentals of Artificial Intelligence and how AI can be
+                    applied in entrepreneurship, innovation, and problem solving.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c1')">View</button>
+                    <a href="certificates/certificate-ai.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c1" class="cert-view">
+                    <iframe src="certificates/certificate-ai.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="certificate-box">
+                <h3>Front-end Web Development</h3>
+                <p class="issuer">Reliance Foundation | Skill India</p>
+                <p class="cert-desc">
+                    Gained practical knowledge of HTML, CSS, and basic responsive
+                    web design for creating user-friendly websites.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c2')">View</button>
+                    <a href="certificates/certificate-frontend.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c2" class="cert-view">
+                    <iframe src="certificates/certificate-frontend.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="certificate-box">
+                <h3>Junior Software Developer</h3>
+                <p class="issuer">NASSCOM | Skill India</p>
+                <p class="cert-desc">
+                    Learned basics of software development, programming concepts,
+                    and industry-oriented technical skills.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c3')">View</button>
+                    <a href="certificates/certificate-jsd.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c3" class="cert-view">
+                    <iframe src="certificates/certificate-jsd.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="certificate-box">
+                <h3>Operating Systems (CS401)</h3>
+                <p class="issuer">Saylor Academy</p>
+                <p class="cert-desc">
+                    Studied core operating system concepts such as process management,
+                    memory management, and CPU scheduling.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c4')">View</button>
+                    <a href="certificates/operating-systems.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c4" class="cert-view">
+                    <iframe src="certificates/operating-systems.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="certificate-box">
+                <h3>PM Vishwakarma</h3>
+                <p class="issuer">NSDC | Skill India</p>
+                <p class="cert-desc">
+                    Completed skill-based training focused on vocational and
+                    employability skills under the PM Vishwakarma scheme.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c5')">View</button>
+                    <a href="certificates/pm-vishwakarma.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c5" class="cert-view">
+                    <iframe src="certificates/pm-vishwakarma.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="certificate-box">
+                <h3>Solar Panel Installation Technician</h3>
+                <p class="issuer">NSDC | Skill India</p>
+                <p class="cert-desc">
+                    Learned basics of solar panel installation, safety practices,
+                    and renewable energy concepts.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c6')">View</button>
+                    <a href="certificates/solar-panel.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c6" class="cert-view">
+                    <iframe src="certificates/solar-panel.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="certificate-box">
+                <h3>Unlocking AI for Everyone (Beginner)</h3>
+                <p class="issuer">Microsoft | NSQF</p>
+                <p class="cert-desc">
+                    Understood basic AI concepts and how artificial intelligence
+                    is used in real-world applications.
+                </p>
+                <div class="cert-actions">
+                    <button class="btn view-btn" onclick="toggleCert('c7')">View</button>
+                    <a href="certificates/microsoft-ai.pdf" download class="btn download-btn">Download</a>
+                </div>
+                <div id="c7" class="cert-view">
+                    <iframe src="certificates/microsoft-ai.pdf" class="cert-preview"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+
+        <div class="contact-container">
+
+            <!-- Email -->
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <h4>Email</h4>
+                    <a href="saurabhv8463@gmail.com">saurabhv8463@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <span class="contact-icon">🔗</span>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/saurabh-vishwakarma-011b02389" target="_blank">
+                        linkedin.com/in/saurabh-vishwakarma-011b02389
+                    </a>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/saurabhv8463-bit" target="_blank">
+                        github.com/saurabhv8463-bit
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="showMessage()">Say Hello</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Saurabh Vishwakarma</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
